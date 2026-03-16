@@ -2,7 +2,7 @@
 
 <div class="container mt-5">
 
-    <h1>Dashboard</h1>
+    <h1>Dashboard brutta brutta</h1>
 
     <p>
         Ciao <strong>{{ auth()->user()->name }}</strong>,
