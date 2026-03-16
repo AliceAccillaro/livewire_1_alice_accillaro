@@ -1,9 +1,8 @@
 <x-layout>
 
-<section class="hero">
-
-    <h1>Homepage</h1>
-
-</section>
-
+<div class="container vh-100">
+    <div class="row h-100 align-items-center">
+             @livewire('counter')
+    </div>
+</div>
 </x-layout>

@@ -6,6 +6,7 @@
     <title>Laravel App</title>
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @livewireStyles
 </head>
 <body>
 
@@ -13,6 +14,7 @@
 
     <main>
         {{ $slot }}
+        @livewireScripts
     </main>
 
     <x-footer />
