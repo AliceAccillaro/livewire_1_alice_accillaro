@@ -11,18 +11,13 @@
 
       <ul class="navbar-nav">
 
-        {{-- HOME --}}
         <li class="nav-item">
           <a class="nav-link active" href="{{ route('homepage') }}">Home</a>
         </li>
 
-        {{-- LINK --}}
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="{{ route('posts') }}">Tutti i post</a>
         </li>
-
-
-        {{-- DROPDOWN UTENTE --}}
         <li class="nav-item dropdown">
 
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
@@ -37,7 +32,6 @@
 
           <ul class="dropdown-menu">
 
-            {{-- SE NON LOGGATO --}}
             @guest
 
                 <li>
@@ -55,7 +49,6 @@
             @endguest
 
 
-            {{-- SE LOGGATO --}}
             @auth
 
                 <li>

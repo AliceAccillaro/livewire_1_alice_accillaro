@@ -2,10 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\PublicController;
 
-Route::get('/', function () {
-    return view('home');
-})->name('homepage');
+Route::get('/', [PublicController::class, 'home'])->name('homepage');
+Route::get('/posts',[PublicController::class,'posts'])->name('posts');
 
 Route::middleware('guest')->group(function () {
     Route::get('/register', [AuthController::class, 'showRegister'])->name('register');
